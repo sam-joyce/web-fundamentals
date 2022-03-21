@@ -1,0 +1,28 @@
+h1 {
+  color: red;
+}
+
+main {
+  width: 90%;
+  /* height: 200px; */
+  border: 2px solid black;
+  margin: 50px auto;
+  display: flex;
+  /* row is the default */
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div {
+  width: 250px;
+  height: 100px;
+  background-color: red;
+  /* center the numbers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* media queries can help us scale our website */
