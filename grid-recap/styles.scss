@@ -1,0 +1,68 @@
+// main {
+//   border: 2px solid black;
+//   width: 80%;
+//   height: 600px;
+//   margin: 20px auto;
+//   display: grid;
+//   // columns
+//   grid-template-columns: 1fr 1fr 1fr;
+//   // rows
+//   grid-template-rows: 1fr 1fr 1fr;
+//   gap: 10px;
+
+//   div {
+//     background-color: aqua;
+//   }
+// }
+
+
+// // media queries
+// // make our website responsive... can be viewed on different screen sizes/display types
+
+// // will only be applied when screen size is < 750px
+// @media screen and (max-width: 750px) {
+//   // i want a 2 column layout
+//   main {
+//     grid-template-columns: 1fr 1fr;
+//   }
+// }
+
+
+
+
+main {
+  // border: 2px solid black;
+  width: 80%;
+  height: 600px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-areas: 
+    "nav nav nav nav nav"
+    "section section div div div"
+    "footer footer footer footer footer"
+  ;
+  gap: 10px;
+
+  > * {
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+  
+  section {
+    grid-area: section;
+  }
+  
+  div {
+    grid-area: div;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+}
